@@ -12,7 +12,7 @@ This question shows up a lot online. For example:
 * DrDobbs: 
     * [Run of 20 in 1,000,000](http://www.drdobbs.com/architecture-and-design/20-heads-in-a-row-what-are-the-odds/229300217)
     
-The answer is usually given in terms of the [Fibonacci N-step](http://mathworld.wolfram.com/Fibonaccin-StepNumber.html) sequence. The derivation is straightforwardbut since the Fibonacci N-step is not an explicit function of the variables N and K the resulting formula is very opaque.  In the attached notebook I derive a couple of simple semi-analytical expressions and discuss their accuracy. These expressions are:
+The answer is usually given in terms of the [Fibonacci N-step](http://mathworld.wolfram.com/Fibonaccin-StepNumber.html) sequence but since the Fibonacci N-step is not an explicit function of the variables N and K the resulting formula is very opaque.  In the attached notebook I derive a couple of simple semi-analytical expressions and discuss their accuracy. These expressions are:
 
 ![Prob1](https://latex.codecogs.com/gif.latex?P&space;\simeq&space;1&space;-&space;\exp\left(-\frac{K-N&plus;2}{2^{N&plus;1}}\right))
 
