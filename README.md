@@ -20,5 +20,8 @@ with accuracy that generally improves with increasing _N,K_. And if:
 
 ![Prob2](https://latex.codecogs.com/gif.latex?\frac{K-N&plus;2}{2^{N&plus;1}}\ll&space;1\Rightarrow&space;P&space;\simeq&space;\frac{K-N&plus;2}{2^{N&plus;1}})
 
+This last expression is particularly convenient because it does not require a computer/calculator. 
+
 For the examples listed above we obtain:
+
 ![table](https://github.com/mtzoufras/Probability_of_N_consecutive_heads_in_K_coin_tosses/blob/master/Kflips.png?raw=true)
