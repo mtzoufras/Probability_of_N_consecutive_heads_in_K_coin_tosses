@@ -1,9 +1,5 @@
 #  What is the probability P of getting N consecutive heads at least once in K tosses of a fair coin?
 
-__Quick answer:__ The exact result is P=1-F<sub>K+2</sub><sup>(N)</sup>/2^K, where $F_{K+2}^{(N)}$ is the Fibonacci N-step number. For a good approximation I calculate $x = \frac{K-N+2}{2^{N+1}}$ and if $x\lesssim 0.1$ then $P\simeq x$, else $P\simeq 1-e^{-x}$.
-
-__Corollary:__ This yields an approximate expression for the Fibonacci N-step number: $F_{K+2}^{(N)} \simeq 2^K \exp\left(-\frac{K-N+2}{2^{N+1}}\right)$
-
 This question shows up a lot online. For example:
 * Quora: 
     * [Run of 5 in 11](https://www.quora.com/What-is-the-probability-of-getting-5-consecutive-heads-in-11-tosses-of-a-fair-coin) 
@@ -16,8 +12,13 @@ This question shows up a lot online. For example:
 * DrDobbs: 
     * [Run of 20 in 1,000,000](http://www.drdobbs.com/architecture-and-design/20-heads-in-a-row-what-are-the-odds/229300217)
     
-    The answer is usually given in terms of the [_Fibonacci N-step_](http://mathworld.wolfram.com/Fibonaccin-StepNumber.html) sequence. The derivation is straightforward (see the Appendix at the bottom) but since the Fibonacci is not an explicit function of the variables N and K the resulting formula is very opaque.  Here I will show a couple of simple semi-analytical (...) expressions and discuss their accuracy:
-1. $P \simeq 1 - \exp\left(-\frac{K-N+2}{2^{N+1}}\right)$, with accuracy that generally improves with increasing $N,K$ 
-2. If $\frac{K-N+2}{2^{N+1}}\ll 1$ then $P \simeq \frac{K-N+2}{2^{N+1}}$. 
+The answer is usually given in terms of the [Fibonacci N-step](http://mathworld.wolfram.com/Fibonaccin-StepNumber.html) sequence. The derivation is straightforwardbut since the Fibonacci N-step is not an explicit function of the variables N and K the resulting formula is very opaque.  In the attached notebook I derive a couple of simple semi-analytical expressions and discuss their accuracy. These expressions are:
 
+![Prob1](https://latex.codecogs.com/gif.latex?P&space;\simeq&space;1&space;-&space;\exp\left(-\frac{K-N&plus;2}{2^{N&plus;1}}\right))
+
+with accuracy that generally improves with increasing _N,K_. And if: 
+
+![Prob2](https://latex.codecogs.com/gif.latex?\frac{K-N&plus;2}{2^{N&plus;1}}\ll&space;1\Rightarrow&space;P&space;\simeq&space;\frac{K-N&plus;2}{2^{N&plus;1}})
+
+For the examples listed above we obtain:
 ![table](https://github.com/mtzoufras/Probability_of_N_consecutive_heads_in_K_coin_tosses/blob/master/Kflips.png?raw=true)
