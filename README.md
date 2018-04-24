@@ -16,7 +16,7 @@ The answer is usually given in terms of the [Fibonacci N-step](http://mathworld.
 
 ![Prob1](https://latex.codecogs.com/gif.latex?P&space;\simeq&space;1&space;-&space;\exp\left(-\frac{K-N&plus;2}{2^{N&plus;1}}\right))
 
-with accuracy that generally improves with increasing _N,K_. And if: 
+with accuracy that generally improves with increasing _N,K_. Furthermore: 
 
 ![Prob2](https://latex.codecogs.com/gif.latex?\frac{K-N&plus;2}{2^{N&plus;1}}\ll&space;1\Rightarrow&space;P&space;\simeq&space;\frac{K-N&plus;2}{2^{N&plus;1}})
 
